@@ -6,6 +6,13 @@
       "subject": "STATS",
       "catalog": "102C",
       "sections": null
+    },
+    {
+      "name": "MATH 156",
+      "term": "26F",
+      "subject": "MATH",
+      "catalog": "156",
+      "sections": null
     }
   ]
 }
