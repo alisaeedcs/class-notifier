@@ -38,13 +38,24 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 
 def build_model(term: str, subject: str, catalog: str) -> dict:
     subject_field = subject.strip().upper().ljust(7)
-    m = re.match(r"(\d+)(\D*)", catalog.strip())
+    # Catalog numbers can carry a single cross-list letter, either before the
+    # digits (e.g. "C161") or after them (e.g. "102C", "156A"). UCLA's SOC page
+    # encodes these two cases differently in the fixed-width 8-char catalog
+    # field: a trailing letter packs right after the digits ("0102C   "), but
+    # a leading letter sits in a fixed slot with gaps around it ("0161  C ").
+    # In both cases the Path field drops whitespace from the subject and
+    # appends digits+letter, letter last regardless of which side it's on.
+    m = re.match(r"([A-Z]*)(\d+)([A-Z]*)$", catalog.strip().upper())
     if not m:
         raise ValueError(f"Could not parse catalog number: {catalog!r}")
-    digits, suffix = m.group(1), m.group(2)
-    numeric_field = digits.zfill(4) + suffix
-    catalog_field = numeric_field.ljust(8)
-    path = subject.strip().upper() + numeric_field
+    prefix, digits, suffix = m.group(1), m.group(2), m.group(3)
+    letter = prefix or suffix
+    numeric_field = digits.zfill(4)
+    if prefix:
+        catalog_field = numeric_field.ljust(6) + letter.ljust(2)
+    else:
+        catalog_field = (numeric_field + letter).ljust(8)
+    path = re.sub(r"\s+", "", subject.strip().upper()) + numeric_field + letter
     token = base64.b64encode((catalog_field + path).encode()).decode()
     return {
         "Term": term,
@@ -70,6 +81,11 @@ def _search_url(term: str, subject: str) -> str:
 COLUMN_CLASSES = ["sectionColumn", "statusColumn", "waitlistColumn", "dayColumn",
                    "timeColumn", "locationColumn", "unitsColumn", "instructorColumn"]
 
+ORIGIN = "https://sa.ucla.edu"
+DETAIL_HREF_RE = re.compile("ClassDetail", re.I)
+AS_OF_RE = re.compile(r"Status as of[^<.]*")
+TEMPLATE_TAG_RE = re.compile(r"</?template[^>]*>", re.I)
+
 
 def _clean(text: str) -> str:
     text = re.sub(r"(?<=[a-z0-9\)])(?=[A-Z])", " ", text)
@@ -94,6 +110,8 @@ def parse_html(html: str) -> list[dict]:
             time_ = time_[len(day):].strip()
         time_ = re.sub(r"\s*-\s*", "-", time_)
 
+        detail = row.find("a", href=DETAIL_HREF_RE)
+
         out.append({
             "section": section,
             "status": _clean(cols["statusColumn"]),
@@ -103,8 +121,54 @@ def parse_html(html: str) -> list[dict]:
             "location": cols["locationColumn"],
             "units": cols["unitsColumn"],
             "instructor": cols["instructorColumn"],
+            "detail_url": ORIGIN + detail["href"] if detail else "",
         })
     return out
+
+
+def enrollment_state(text: str) -> str:
+    """Coarse enrollment state, so the summary table and the detail page can be
+    compared even though they word things differently ('Open 39 of 40 Enrolled 1
+    Spots Left' vs 'Open: 1 of 40 Left')."""
+    m = re.match(r"\s*(open|closed|waitlist)", text or "", re.IGNORECASE)
+    return m.group(1).upper() if m else ""
+
+
+def fetch_class_detail(detail_url: str, session: requests.Session = None,
+                       referer: str = None) -> dict:
+    """Fetch one section's detail page.
+
+    Unlike the summary table, this page reports a section's seat status *and*
+    the time that status was last refreshed in the same response, and the
+    timestamp is per-section rather than a page-wide banner. That pairing is
+    what makes it possible to tell a genuinely new reading from an older one
+    replayed by a different server."""
+    sess = session or requests.Session()
+    sess.headers.update({"User-Agent": UA})
+
+    resp = sess.get(detail_url, headers={"Referer": referer} if referer else {}, timeout=25)
+    resp.raise_for_status()
+
+    # The detail page renders into a shadow DOM, so the section's real table sits
+    # inside a <template> that html.parser won't expose as elements. Unwrapping
+    # the template tags puts it back in the normal tree (and avoids taking on an
+    # lxml/html5lib dependency just for this page).
+    soup = BeautifulSoup(TEMPLATE_TAG_RE.sub("", resp.text), "html.parser")
+
+    as_of_match = AS_OF_RE.search(resp.text)
+    # The header row carries the same class as the data row, so pick the first
+    # one that actually has data cells rather than <th> headings.
+    cells = []
+    for row in soup.find_all("tr", class_="enrl_mtng_info"):
+        cells = row.find_all("td")
+        if cells:
+            break
+
+    return {
+        "status": _clean(cells[0].get_text(" ", strip=True)) if len(cells) > 0 else "",
+        "waitlist": _clean(cells[1].get_text(" ", strip=True)) if len(cells) > 1 else "",
+        "as_of": as_of_match.group(0) if as_of_match else "",
+    }
 
 
 def fetch_sections(term: str, subject: str, catalog: str, session: requests.Session = None) -> tuple[list[dict], str]:

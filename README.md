@@ -26,6 +26,24 @@ and emails you when one changes. Runs for free on a GitHub Actions schedule.
   hour** server-side, so 15-minute polling is just a safety margin, not an
   attempt at real-time tracking.
 
+- UCLA serves the schedule from several servers whose snapshots can differ by
+  hours, and the summary table carries no timestamp saying which snapshot you
+  got. A class sitting right on a seat boundary (e.g. 39 of 40 taken) therefore
+  looks like it flaps open/closed forever, one email per poll.
+
+  So a change is never emailed on the summary table alone. When the summary
+  reports one, `run_check.py` confirms it against that section's *detail* page,
+  which reports the seat status **and** the time that status was refreshed in
+  the same response — a per-section timestamp, not the page-wide "Status as of"
+  banner, which comes from a different request and doesn't describe the seat
+  data. The change is only accepted if the detail page agrees the seats really
+  moved and its timestamp is no older than the last one accepted for that
+  section; otherwise the old value is kept and it's rechecked next run.
+
+  That extra fetch only happens when a change is seen, so a quiet run still
+  costs one request per course. Accepted timestamps are recorded per section in
+  `state.json` as `_as_of` / `_as_of_epoch`.
+
 ## Setup
 
 1. Push this repo to GitHub (can be public — nothing sensitive is stored,
