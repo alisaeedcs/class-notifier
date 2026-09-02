@@ -27,6 +27,69 @@
       "subject": "STATS",
       "catalog": "140XP",
       "sections": null
+    },
+    {
+      "name": "STATS C116",
+      "term": "26F",
+      "subject": "STATS",
+      "catalog": "C116",
+      "sections": null
+    },
+    {
+      "name": "STATS C216 (grad twin of C116)",
+      "term": "26F",
+      "subject": "STATS",
+      "catalog": "C216",
+      "sections": null
+    },
+    {
+      "name": "STATS C261 (grad twin of C161)",
+      "term": "26F",
+      "subject": "STATS",
+      "catalog": "C261",
+      "sections": null
+    },
+    {
+      "name": "STATS C183",
+      "term": "26F",
+      "subject": "STATS",
+      "catalog": "C183",
+      "sections": null
+    },
+    {
+      "name": "STATS C283 (grad twin of C183)",
+      "term": "26F",
+      "subject": "STATS",
+      "catalog": "C283",
+      "sections": null
+    },
+    {
+      "name": "MATH 131A",
+      "term": "26F",
+      "subject": "MATH",
+      "catalog": "131A",
+      "sections": null
+    },
+    {
+      "name": "MATH 131B",
+      "term": "26F",
+      "subject": "MATH",
+      "catalog": "131B",
+      "sections": null
+    },
+    {
+      "name": "MATH 151A",
+      "term": "26F",
+      "subject": "MATH",
+      "catalog": "151A",
+      "sections": null
+    },
+    {
+      "name": "MATH 151B",
+      "term": "26F",
+      "subject": "MATH",
+      "catalog": "151B",
+      "sections": null
     }
   ]
 }

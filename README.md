@@ -63,6 +63,21 @@ and emails you when one changes. Runs for free on a GitHub Actions schedule.
    `sections`: `null` watches every section; or restrict to specific ones,
    e.g. `["Lec 1", "Lec 3"]`.
 
+   Catalog numbers may carry a letter before the digits (`C161`) or after them
+   (`102C`, `140XP`) — both work.
+
+   Some UCLA courses are **concurrently scheduled**: an undergrad course and a
+   graduate one meeting as the same class, same instructor, same room and hour,
+   but with separate enrollment caps. The grad half often has seats when the
+   undergrad half is full, so it's worth watching both. Enrolling in the grad
+   half as an undergrad needs departmental approval. Currently paired:
+
+   | Undergrad | Grad | Class |
+   |---|---|---|
+   | STATS C116 | STATS C216 | Applied Bayesian Social Statistics |
+   | STATS C161 | STATS C261 | Introduction to Machine Learning and AI |
+   | STATS C183 | STATS C283 | Statistical Models in Finance |
+
 3. In the GitHub repo settings, add these Actions secrets
    (Settings -> Secrets and variables -> Actions -> New repository secret):
 
