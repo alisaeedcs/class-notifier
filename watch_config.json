@@ -20,6 +20,13 @@
       "subject": "STATS",
       "catalog": "C161",
       "sections": null
+    },
+    {
+      "name": "STATS 140XP",
+      "term": "26F",
+      "subject": "STATS",
+      "catalog": "140XP",
+      "sections": null
     }
   ]
 }
