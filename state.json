@@ -16,12 +16,12 @@
   "MATH 156|Lec 1|_accepted_at": 1788295515,
   "MATH 156|Lec 1|_as_of": "Status as of 1:45 PM",
   "MATH 156|Lec 1|_as_of_epoch": 1788295500,
-  "MATH 156|_status_as_of": "Status as of 10:00 PM",
+  "MATH 156|_status_as_of": "Status as of 11:00 PM",
   "STATS 102C|Lec 1": "Closed Class Full (80) | No Waitlist",
   "STATS 102C|Lec 2": "Closed Class Full (80) | No Waitlist",
   "STATS 102C|Lec 3": "Closed Class Full (80) | No Waitlist",
   "STATS 102C|Lec 4": "Closed Class Full (80) | No Waitlist",
-  "STATS 102C|_status_as_of": "Status as of 10:00 PM",
+  "STATS 102C|_status_as_of": "Status as of 11:00 PM",
   "STATS 140XP|Lec 1": "Closed Class Full (40) | No Waitlist",
   "STATS 140XP|Lec 2": "Closed Class Full (40) | No Waitlist",
   "STATS 140XP|Lec 3": "Closed Class Full (40) | No Waitlist",
@@ -29,7 +29,7 @@
   "STATS C116|Lec 1": "Closed Class Full (40) | No Waitlist",
   "STATS C116|_status_as_of": "Status as of 11:00 PM",
   "STATS C161|Lec 1": "Closed Class Full (40) | No Waitlist",
-  "STATS C161|_status_as_of": "Status as of 10:00 PM",
+  "STATS C161|_status_as_of": "Status as of 11:00 PM",
   "STATS C183|Lec 1": "Closed Class Full (50) | No Waitlist",
   "STATS C183|_status_as_of": "Status as of 11:00 PM",
   "STATS C216 (grad twin of C116)|Lec 1": "Open 3 of 10 Enrolled 7 Spots Left | No Waitlist",
@@ -41,5 +41,5 @@
   "STATS C261 (grad twin of C161)|_status_as_of": "Status as of 11:00 PM",
   "STATS C283 (grad twin of C183)|Lec 1": "Closed Class Full (10) | No Waitlist",
   "STATS C283 (grad twin of C183)|_status_as_of": "Status as of 11:00 PM",
-  "_last_checked": 1788415220
+  "_last_checked": 1788416125
 }
