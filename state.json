@@ -32,10 +32,10 @@
   "STATS C161|_status_as_of": "Status as of 7:12 PM",
   "STATS C183|Lec 1": "Closed Class Full (50) | No Waitlist",
   "STATS C183|_status_as_of": "Status as of 7:12 PM",
-  "STATS C216 (grad twin of C116)|Lec 1": "Open 3 of 10 Enrolled 7 Spots Left | No Waitlist",
-  "STATS C216 (grad twin of C116)|Lec 1|_accepted_at": 1788996620,
-  "STATS C216 (grad twin of C116)|Lec 1|_as_of": "Status as of 4:30 PM",
-  "STATS C216 (grad twin of C116)|Lec 1|_as_of_epoch": 1788996600,
+  "STATS C216 (grad twin of C116)|Lec 1": "Open 4 of 10 Enrolled 6 Spots Left | No Waitlist",
+  "STATS C216 (grad twin of C116)|Lec 1|_accepted_at": 1789007420,
+  "STATS C216 (grad twin of C116)|Lec 1|_as_of": "Status as of 1:15 PM",
+  "STATS C216 (grad twin of C116)|Lec 1|_as_of_epoch": 1788984900,
   "STATS C216 (grad twin of C116)|_status_as_of": "Status as of 7:12 PM",
   "STATS C261 (grad twin of C161)|Lec 1": "Closed Class Full (20) | No Waitlist",
   "STATS C261 (grad twin of C161)|Lec 1|_accepted_at": 1788400821,
@@ -47,5 +47,5 @@
   "STATS C283 (grad twin of C183)|Lec 1|_as_of": "Status as of 1:30 PM",
   "STATS C283 (grad twin of C183)|Lec 1|_as_of_epoch": 1788899400,
   "STATS C283 (grad twin of C183)|_status_as_of": "Status as of 7:12 PM",
-  "_last_checked": 1789006516
+  "_last_checked": 1789007420
 }
