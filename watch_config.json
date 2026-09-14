@@ -90,6 +90,13 @@
       "subject": "MATH",
       "catalog": "151B",
       "sections": null
+    },
+    {
+      "name": "DGT HUM 101",
+      "term": "26F",
+      "subject": "DGT HUM",
+      "catalog": "101",
+      "sections": null
     }
   ]
 }
