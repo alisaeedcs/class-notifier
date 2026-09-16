@@ -62,6 +62,13 @@
       "subject": "DGT HUM",
       "catalog": "101",
       "sections": null
+    },
+    {
+      "name": "MATH 115A",
+      "term": "26F",
+      "subject": "MATH",
+      "catalog": "115A",
+      "sections": null
     }
   ]
 }
