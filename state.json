@@ -6,7 +6,7 @@
   "DGT HUM 101|_status_as_of": "Status as of 11:47 PM",
   "MATH 115A|Lec 1": "Closed Class Full (103) | Waitlist Full (12)",
   "MATH 115A|Lec 2": "Closed Class Full (80) | Waitlist Full (6)",
-  "MATH 115A|_status_as_of": "Status as of 11:47 PM",
+  "MATH 115A|_status_as_of": "Status as of 12:16 AM",
   "MATH 131A|Lec 1": "Closed Class Full (160) | Waitlist Full (12)",
   "MATH 131A|Lec 1|_accepted_at": 1789807520,
   "MATH 131A|Lec 1|_as_of": "Status as of 1:10 AM",
@@ -74,7 +74,7 @@
   "STATS 153|Lec 1|_accepted_at": 1789813818,
   "STATS 153|Lec 1|_as_of": "Status as of 3:30 AM",
   "STATS 153|Lec 1|_as_of_epoch": 1789813800,
-  "STATS 153|_status_as_of": "Status as of 11:47 PM",
+  "STATS 153|_status_as_of": "Status as of 12:16 AM",
   "STATS C116|Lec 1": "Closed by Dept Statistics and Data Science (0 capacity, 40 enrolled, 0 waitlisted) | No Waitlist",
   "STATS C116|Lec 1|_accepted_at": 1789813818,
   "STATS C116|Lec 1|_as_of": "Status as of 3:30 AM",
@@ -105,5 +105,5 @@
   "STATS C283 (grad twin of C183)|Lec 1|_as_of": "Status as of 2:15 AM",
   "STATS C283 (grad twin of C183)|Lec 1|_as_of_epoch": 1789463700,
   "STATS C283 (grad twin of C183)|_status_as_of": "Status as of 9:13 PM",
-  "_last_checked": 1790063118
+  "_last_checked": 1790064021
 }
