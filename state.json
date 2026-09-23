@@ -7,10 +7,10 @@
   "MATH 115A|Lec 1": "Closed Class Full (103) | Waitlist Full (12)",
   "MATH 115A|Lec 2": "Closed Class Full (80) | Waitlist Full (6)",
   "MATH 115A|_status_as_of": "Status as of 2:43 PM",
-  "MATH 131A|Lec 1": "Waitlist Class Full (160) | 11 of 12 Taken",
-  "MATH 131A|Lec 1|_accepted_at": 1790152220,
-  "MATH 131A|Lec 1|_as_of": "Status as of 1:21 AM",
-  "MATH 131A|Lec 1|_as_of_epoch": 1790151660,
+  "MATH 131A|Lec 1": "Waitlist Class Full (160) | 10 of 12 Taken",
+  "MATH 131A|Lec 1|_accepted_at": 1790200012,
+  "MATH 131A|Lec 1|_as_of": "Status as of 4:42 AM",
+  "MATH 131A|Lec 1|_as_of_epoch": 1790163720,
   "MATH 131A|_status_as_of": "Status as of 2:43 PM",
   "MATH 131B|Lec 1": "Waitlist Class Full (40) | 2 of 3 Taken",
   "MATH 131B|Lec 1|_accepted_at": 1789498677,
@@ -105,5 +105,5 @@
   "STATS C283 (grad twin of C183)|Lec 1|_as_of": "Status as of 2:15 AM",
   "STATS C283 (grad twin of C183)|Lec 1|_as_of_epoch": 1789463700,
   "STATS C283 (grad twin of C183)|_status_as_of": "Status as of 9:13 PM",
-  "_last_checked": 1790199915
+  "_last_checked": 1790200012
 }
