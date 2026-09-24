@@ -57,10 +57,10 @@
   "STATS 102C|Lec 4|_as_of": "Status as of 3:45 AM",
   "STATS 102C|Lec 4|_as_of_epoch": 1790073900,
   "STATS 102C|_status_as_of": "Status as of 1:29 AM",
-  "STATS 140XP|Lec 1": "Closed by Dept Statistics and Data Science (0 capacity, 40 enrolled, 0 waitlisted) | No Waitlist",
-  "STATS 140XP|Lec 1|_accepted_at": 1789813818,
-  "STATS 140XP|Lec 1|_as_of": "Status as of 3:30 AM",
-  "STATS 140XP|Lec 1|_as_of_epoch": 1789813800,
+  "STATS 140XP|Lec 1": "Closed by Dept Statistics and Data Science (0 capacity, 39 enrolled, 0 waitlisted) | No Waitlist",
+  "STATS 140XP|Lec 1|_accepted_at": 1790240424,
+  "STATS 140XP|Lec 1|_as_of": "Status as of 1:46 AM",
+  "STATS 140XP|Lec 1|_as_of_epoch": 1790239560,
   "STATS 140XP|Lec 2": "Closed by Dept Statistics and Data Science (0 capacity, 40 enrolled, 0 waitlisted) | No Waitlist",
   "STATS 140XP|Lec 2|_accepted_at": 1789813818,
   "STATS 140XP|Lec 2|_as_of": "Status as of 3:30 AM",
@@ -105,5 +105,5 @@
   "STATS C283 (grad twin of C183)|Lec 1|_as_of": "Status as of 2:15 AM",
   "STATS C283 (grad twin of C183)|Lec 1|_as_of_epoch": 1789463700,
   "STATS C283 (grad twin of C183)|_status_as_of": "Status as of 9:13 PM",
-  "_last_checked": 1790239516
+  "_last_checked": 1790240424
 }
