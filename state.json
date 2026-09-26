@@ -1,8 +1,8 @@
 {
-  "DGT HUM 101|Lec 1": "Closed Class Full (120) | Waitlist Full (12)",
-  "DGT HUM 101|Lec 1|_accepted_at": 1790408717,
-  "DGT HUM 101|Lec 1|_as_of": "Status as of 4:42 AM",
-  "DGT HUM 101|Lec 1|_as_of_epoch": 1790336520,
+  "DGT HUM 101|Lec 1": "Closed Class Full (120) | No Waitlist",
+  "DGT HUM 101|Lec 1|_accepted_at": 1790411418,
+  "DGT HUM 101|Lec 1|_as_of": "Status as of 1:30 AM",
+  "DGT HUM 101|Lec 1|_as_of_epoch": 1790411400,
   "DGT HUM 101|_status_as_of": "Status as of 12:45 AM",
   "MATH 115A|Lec 1": "Closed Class Full (103) | Waitlist Full (12)",
   "MATH 115A|Lec 2": "Closed Class Full (80) | Waitlist Full (6)",
@@ -105,5 +105,5 @@
   "STATS C283 (grad twin of C183)|Lec 1|_as_of": "Status as of 2:15 AM",
   "STATS C283 (grad twin of C183)|Lec 1|_as_of_epoch": 1789463700,
   "STATS C283 (grad twin of C183)|_status_as_of": "Status as of 9:13 PM",
-  "_last_checked": 1790410514
+  "_last_checked": 1790411418
 }
