@@ -3,7 +3,7 @@
   "DGT HUM 101|Lec 1|_accepted_at": 1791564237,
   "DGT HUM 101|Lec 1|_as_of": "Status as of 3:17 AM",
   "DGT HUM 101|Lec 1|_as_of_epoch": 1791541020,
-  "DGT HUM 101|_status_as_of": "Status as of 8:41 AM",
+  "DGT HUM 101|_status_as_of": "Status as of 12:42 PM",
   "MATH 115A|Lec 1": "Closed Class Full (103), Over Enrolled By 10 | No Waitlist",
   "MATH 115A|Lec 1|_accepted_at": 1791929258,
   "MATH 115A|Lec 1|_as_of": "Status as of 5:28 AM",
@@ -12,12 +12,12 @@
   "MATH 115A|Lec 2|_accepted_at": 1791821163,
   "MATH 115A|Lec 2|_as_of": "Status as of 4:10 AM",
   "MATH 115A|Lec 2|_as_of_epoch": 1791803400,
-  "MATH 115A|_status_as_of": "Status as of 8:41 AM",
+  "MATH 115A|_status_as_of": "Status as of 12:42 PM",
   "MATH 131A|Lec 1": "Closed Class Full (160), Over Enrolled By 11 | No Waitlist",
   "MATH 131A|Lec 1|_accepted_at": 1791615746,
   "MATH 131A|Lec 1|_as_of": "Status as of 4:37 AM",
   "MATH 131A|Lec 1|_as_of_epoch": 1791545820,
-  "MATH 131A|_status_as_of": "Status as of 8:41 AM",
+  "MATH 131A|_status_as_of": "Status as of 12:42 PM",
   "MATH 131B|Lec 1": "Waitlist Class Full (40) | 2 of 3 Taken",
   "MATH 131B|Lec 1|_accepted_at": 1789498677,
   "MATH 131B|Lec 1|_as_of": "Status as of 11:58 AM",
@@ -111,5 +111,5 @@
   "STATS C283 (grad twin of C183)|Lec 1|_as_of": "Status as of 2:15 AM",
   "STATS C283 (grad twin of C183)|Lec 1|_as_of_epoch": 1789463700,
   "STATS C283 (grad twin of C183)|_status_as_of": "Status as of 9:13 PM",
-  "_last_checked": 1791994512
+  "_last_checked": 1792008962
 }
