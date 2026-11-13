@@ -1,66 +1,38 @@
 {
   "watches": [
     {
-      "name": "STATS 102C",
-      "term": "26F",
+      "name": "STATS 133",
+      "term": "27W",
       "subject": "STATS",
-      "catalog": "102C",
-      "sections": null
-    },
-    {
-      "name": "STATS C161",
-      "term": "26F",
-      "subject": "STATS",
-      "catalog": "C161",
+      "catalog": "133",
       "sections": null
     },
     {
       "name": "STATS 140XP",
-      "term": "26F",
+      "term": "27W",
       "subject": "STATS",
       "catalog": "140XP",
       "sections": null
     },
     {
-      "name": "STATS C116",
-      "term": "26F",
+      "name": "STATS 143",
+      "term": "27W",
       "subject": "STATS",
-      "catalog": "C116",
+      "catalog": "143",
       "sections": null
     },
     {
-      "name": "STATS C183",
-      "term": "26F",
+      "name": "STATS C155",
+      "term": "27W",
       "subject": "STATS",
-      "catalog": "C183",
+      "catalog": "C155",
       "sections": null
     },
     {
-      "name": "MATH 131A",
-      "term": "26F",
-      "subject": "MATH",
-      "catalog": "131A",
-      "sections": null
-    },
-    {
-      "name": "DGT HUM 101",
-      "term": "26F",
-      "subject": "DGT HUM",
-      "catalog": "101",
-      "sections": null
-    },
-    {
-      "name": "MATH 115A",
-      "term": "26F",
-      "subject": "MATH",
-      "catalog": "115A",
-      "sections": null
-    },
-    {
-      "name": "STATS 153",
-      "term": "26F",
+      "name": "STATS C160",
+      "term": "27W",
       "subject": "STATS",
-      "catalog": "153",
+      "catalog": "C160",
       "sections": null
     }
   ]
