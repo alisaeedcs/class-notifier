@@ -8,6 +8,12 @@ on:
 permissions:
   contents: write
 
+# External cron (cron-job.org) dispatches this every 15 min on top of the
+# schedule; never let two runs race to push state.json.
+concurrency:
+  group: soc-watch
+  cancel-in-progress: false
+
 jobs:
   check:
     runs-on: ubuntu-latest
